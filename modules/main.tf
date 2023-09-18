@@ -137,18 +137,31 @@ module "resourcegroup" {
         vnet-name = module.vnet.vnet-name
       }
 module "Key" {
-      source = "./contos/platform/connectivity/key"
-      app_vault-name = var.app_vault-name
-      resource-group-name = module.resourcegroup.resource-group-name
-      location = var.location
-      tenant_id = var.tenant_id
-      soft_delete_retention_days = var.soft_delete_retention_days
-      purge_protection_enabled = var.purge_protection_enabled
-      sku_name = var.sku_name
-      vmpassword-name = var.vmpassword-name
-      vmpassword-value = var.vmpassword-value
-      
-    }
+        source = "./contos/platform/connectivity/key"
+
+         resource-group-name                   = var.resource-group-name
+         location                              = var.location
+         key_vault_name                        = var.key_vault_name
+         soft_delete_retention_days            = var.soft_delete_retention_days
+         purge_protection_enabled              = var.purge_protection_enabled
+         sku_name                              = var.sku_name
+         key_permissions                       = var.key_permissions
+         secret_permissions                    = var.secret_permissions
+         storage_permissions                   = var.storage_permissions
+         secret1_name                          = var.secret1_name
+         secret1_value                         = var.secret1_value
+         secret2_name                          = var.secret2_name
+         secret2_value                         = var.secret2_value
+         secret3_name                          = var.secret3_name
+         secret3_value                         = var.secret3_value
+         secret4_name                          = var.secret4_name
+         secret4_value                         = var.secret4_value
+         object_id                             = var.object_id 
+         depends_on                            = [module.resourcegroup]
+         vmpassword-name                       = var.vmpassword-name
+         vmpassword-value                      = var.vmpassword-value
+
+}
 
 
     
