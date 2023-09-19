@@ -30,6 +30,7 @@ offer = "0001-com-ubuntu-server-focal"
 vm_sku = "20_04-lts"
 OS_version = "latest"
 allocation_method = "Static"
+app_public_ip-name = "vm-ip"
 vmsubnet_name="vmsubnet"
 vmsubnet_address_prefixes = [ "20.0.3.0/24" ]
 
