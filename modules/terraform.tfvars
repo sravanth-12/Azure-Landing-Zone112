@@ -46,15 +46,16 @@ vmsubnet_address_prefixes = [ "20.0.3.0/24" ]
       "Get",
     ]
 
+
  secret1_name    = "clientID"
- secret1_value  = "9b704cc2-2360-4345-9e07-8b64d2b44e53"
+ secret1_value  = "45bf8396-bf7b-4703-96ad-be8ec15257e7"
  secret2_name   = "clientsecret"
- secret2_value  = "ZZD8Q~D7CRv92TQ6yQYKJIkvf1fZI8MoyWl_0bcci"
+ secret2_value  = "Oyn8Q~PL1qTip.DO_fMKRZ52th~Ma5SRg.70FcSn"
  secret3_name = "tenantID"
- secret3_value  = "cbd1330e-3386-4387-bb4e-f694462d12a0"
+ secret3_value  = "cd3abfb4-bd8f-4ad0-8438-14879733eb2f"
  secret4_name   = "subscriptionID"
- secret4_value = "ed5f7fb3-5ce8-4966-9c5c-1c32a70c2ec6"
- object_id = "24b26030-554a-406f-bcd9-cc13688c2864"
+ secret4_value = "46b8e0ad-5178-4e00-b201-65f042c1d7ab"
+ object_id = "d4d29539-f1e7-434a-9a52-e0c4485a8fc8"
  vmpassword-name = "VMpassword"
  vmpassword-value = "VMAzure@432"
 /*////*/
